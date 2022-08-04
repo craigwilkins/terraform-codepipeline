@@ -1,0 +1,38 @@
+formatter: markdown table
+
+header-from: docs/HEADER.md
+footer-from: docs/FOOTER.md
+
+
+sections:
+  show:
+    - header
+    - inputs
+    - modules
+    - resources
+    - outputs
+    - footer
+
+content: |-
+  {{ .Header }}
+
+  {{ .Inputs }}
+
+  {{ .Outputs }}
+
+  {{ .Modules }}
+
+  {{ .Resources }}
+
+  {{ .Footer }}
+
+sort:
+  enabled: true
+  by: required
+
+settings:
+  indent: 2
+  escape: true
+  default: true
+  required: true
+  type: true
